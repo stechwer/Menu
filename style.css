@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;;
+}
+a{
+    text-decoration: none;
+}
+body{
+    color:white;
+}
+li{
+    list-style: none;
+}
+.header{
+    height: 100vh;
+    background-color:#e25050;
+}
+.container{
+    max-width: 1200px;
+    padding:0px 15px;
+    margin:0 auto;
+}
+.header-title h3{
+    position: relative;
+    padding-top: 46px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    margin-bottom:45px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.header-title span{
+    top: 92%;
+    left: 48%;
+    position: absolute;
+    width: 48px;
+    height: 2px;
+    background-color: #fff;
+}
+.header-item{
+    background-color:#d14343;
+    width: 370px;
+}
+.header-item-title h3{
+    font-family: 'Oswald', sans-serif;
+    padding-top: 57px;
+    text-align: center;
+    margin-bottom: 51px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.header-item-sale{
+    text-align: center;
+    margin-bottom:55px;
+}
+.header-item-sale span{
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+}
+.header-item-menu ul li{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.header-item-menu ul li:last-child{
+    margin-bottom: 50px;
+}
+.header-item-menu ul li a{
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+.header-item-menu ul li::before{
+    content:url(img/ok.png);
+    margin-right: 20px;
+
+}
+.header-bth{
+    text-align: center;
+    padding-bottom: 80px;
+}
+.header-bth a{
+    text-transform: uppercase;
+    color:white;
+    font-family: 'Oswald', sans-serif;
+    padding:20px 65px;
+    background-color:#e25050;
+    transition: 0.7s;
+}
+.header-bth a:hover{
+    background-color: #fff;
+    color:#d14343;
+}
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+@media(max-width:1150px){
+        .header-wrapper {
+            display: grid;
+            row-gap: 30px;
+            justify-content: space-around;
+        }
+        .header{
+            height: unset;
+            background-size:cover;
+        }
+        .header-item:last-child{
+            margin-bottom: 40px;
+        }
+}
+@media(max-width:400px){
+    .header-item {
+         width: 290px;
+    }
+}
+@media(max-width:310px){
+    .header-item {
+        width: 250px;
+   }
+}
